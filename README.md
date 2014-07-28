@@ -18,3 +18,4 @@ Install the pre-push hook into any repository:
 
 The `install.sh` script will create a git pre-push hook for the specified
 repository. The pre-push hook will play the `push-it.wav` file with `aplay`.
+

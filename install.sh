@@ -6,13 +6,15 @@ fi
 
 TARGET_REPO=$1
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-SOUND="$DIR/push-it.wav"
 PRE_PUSH=$TARGET_REPO/.git/hooks/pre-push
 
 if which aplay >/dev/null; then
     cat > $PRE_PUSH <<EOL
-#!/bin/sh
-aplay $SOUND
+#!/bin/bash
+SOUND[0]="$DIR/push-it.wav"
+SOUND[1]="$DIR/selfie.wav"
+RANDOM_SOUND=\$[\$[ RANDOM % 2]]
+aplay \${SOUND[\$RANDOM_SOUND]}
 EOL
     chmod +x $PRE_PUSH
     echo "Created pre-push hook in $TARGET_REPO"

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+PLAYER="cvlc"
+SOUND="../$GIT_DIR/just-push-it.mp3"
+
+# Play sound
+$PLAYER $SOUND
+exit 0

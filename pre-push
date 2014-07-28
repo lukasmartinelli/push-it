@@ -1,7 +1,0 @@
-#!/bin/sh
-
-PLAYER="cvlc"
-SOUND="push-it.mp3"
-
-$PLAYER $SOUND
-exit 0

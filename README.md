@@ -1,7 +1,8 @@
-push-it-to-the-limit
+Push it to the Limit
 ====================
 
-Plays an encouraging sound when you do a git push.
+Pushes you to the limit while code: Listen to an encouraging sound
+when you do a `git push`.
 
 Clone the repository:
 
@@ -9,8 +10,11 @@ Clone the repository:
 git clone https://github.com/lukasmartinelli/push-it-to-the-limit.git
 ```
 
-Install the pre-push hook into a repository:
+Install the pre-push hook into any repository:
 
 ```bash
 ./install.sh ~/Projects/push-it-to-the-limit
 ```
+
+The `install.sh` script will create a git pre-push hook for the specified
+repository. The pre-push hook will play the `push-it.wav` file with `aplay`.

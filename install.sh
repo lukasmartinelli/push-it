@@ -13,7 +13,8 @@ if which aplay >/dev/null; then
 #!/bin/bash
 SOUND[0]="$DIR/push-it.wav"
 SOUND[1]="$DIR/selfie.wav"
-RANDOM_SOUND=\$[\$[ RANDOM % 2]]
+SOUND[2]="$DIR/that-was-easy.wav"
+RANDOM_SOUND=\$[\$[ RANDOM % 3]]
 aplay \${SOUND[\$RANDOM_SOUND]}
 EOL
     chmod +x $PRE_PUSH

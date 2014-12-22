@@ -7,15 +7,15 @@ when you do a `git push`.
 Clone the repository:
 
 ```bash
-git clone https://github.com/lukasmartinelli/push-it-to-the-limit.git
+git clone https://github.com/lukasmartinelli/push-it.git
 ```
 
 Install the pre-push hook into any repository:
 
 ```bash
-./install.sh ~/Projects/push-it-to-the-limit
+./install.sh /path/to/any/git/repository
 ```
 
 The `install.sh` script will create a git pre-push hook for the specified
-repository. The pre-push hook will play the `push-it.wav` file with `aplay`.
+repository. The pre-push hook will play one of the `wav` files in the repositories with either `aplay` or `afplay`.
 

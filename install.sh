@@ -24,7 +24,7 @@ SOUND[1]="$DIR/selfie.wav"
 SOUND[2]="$DIR/that-was-easy.wav"
 SOUND[4]="$DIR/static_x.wav"
 RANDOM_SOUND=\$[\$[ RANDOM % 4]]
-aplay \${SOUND[\$RANDOM_SOUND]}
+aplay \${SOUND[4]}
 EOL
 chmod +x $PRE_PUSH
 echo "Created pre-push hook in $TARGET_REPO"

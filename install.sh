@@ -17,6 +17,11 @@ else
     exit 0
 fi
 
+if [ ! -d "$TARGET_REPO/.git/hooks" ]; then
+  mkdir $TARGET_REPO/.git/hooks
+  echo "Created hooks folder in $TARGET_REPO/.git/hooks"
+fi
+
 cat > $PRE_PUSH <<EOL
 #!/bin/bash
 SOUND[0]="$DIR/push-it.wav"

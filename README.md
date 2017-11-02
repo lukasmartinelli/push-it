@@ -1,5 +1,6 @@
-If you don't know, this is fork. Original repository is https://github.com/lukasmartinelli/push-it
-This repo contain some merges from other forks. 
+If you don't know it, this is fork. Original repository is https://github.com/lukasmartinelli/push-it
+
+This repo contain some merges from other forks.  
 
 Push it to the Limits
 =====================
@@ -22,6 +23,12 @@ Install the pre-push hook into any repository:
 The `install.sh` script will create a git pre-push hook for the specified
 repository. The pre-push hook will play one of the `wav` files in the repositories with either `aplay` or `afplay`.
 
+You can add your own sound files. Add it to the 'sounds' directory.
+
+If you want set concretely sound, use sound's filename like second parameter
+```bash
+./install.sh /path/to/any/git/repository wubalubadubdub
+```
 Video Demo
 ----------
 

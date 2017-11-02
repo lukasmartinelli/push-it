@@ -1,1 +1,17 @@
 *.swp
+
+# OS generated files #
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+
+# Editor's files #
+.classpath
+.project
+.settings
+.idea
+.metadata
+*.iml
+*.ipr
+*.sublime-workspace
+*.sublime-project

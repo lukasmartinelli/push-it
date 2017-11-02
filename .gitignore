@@ -15,3 +15,9 @@
 *.ipr
 *.sublime-workspace
 *.sublime-project
+
+# Custom sounds
+sounds/*
+!sounds/push-it.wav
+!sounds/static_x.wav
+!sounds/wubalubadubdub.wav

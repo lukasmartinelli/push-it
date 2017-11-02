@@ -1,3 +1,6 @@
+If you don't know, this is fork. Original repository is https://github.com/lukasmartinelli/push-it
+This repo contain some merges from other forks. 
+
 Push it to the Limits
 =====================
 
@@ -7,7 +10,7 @@ when you do a `git push`.
 Clone the repository:
 
 ```bash
-git clone https://github.com/lukasmartinelli/push-it.git
+git clone https://github.com/gynekolog/push-it.git
 ```
 
 Install the pre-push hook into any repository:

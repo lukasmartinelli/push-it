@@ -10,7 +10,7 @@ PRE_PUSH=$TARGET_REPO/.git/hooks/pre-push
 
 if which aplay >/dev/null; then
     PLAYER=aplay
-elif which aflay >/dev/null; then
+elif which afplay >/dev/null; then
     PLAYER=afplay
 else
     echo "Could not find alsa-utils (Linux) or afplay (OSX)"

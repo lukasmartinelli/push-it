@@ -27,7 +27,8 @@ cat > $PRE_PUSH <<EOL
 SOUND[0]="$DIR/push-it.wav"
 SOUND[1]="$DIR/selfie.wav"
 SOUND[2]="$DIR/that-was-easy.wav"
-RANDOM_SOUND=\$[\$[\$RANDOM % 3]]
+SOUND[3]="$DIR/salt-n-pepa.wav"
+RANDOM_SOUND=\$[\$[\$RANDOM % 4]]
 $PLAYER \${SOUND[\$RANDOM_SOUND]}
 EOL
 chmod +x $PRE_PUSH

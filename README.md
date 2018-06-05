@@ -1,7 +1,7 @@
 Push it to the Limits
 =====================
 
-Pushes you to the limits while coding: listen to an encouraging sound
+Pushes you to the limits while coding: listen to an embarassing sound
 when you do a `git push`.
 
 Clone the repository:
